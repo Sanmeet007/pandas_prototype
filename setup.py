@@ -7,7 +7,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '2.0.0'
+VERSION = '1.0.0'
 DESCRIPTION = 'A package that with implementation of famous Pandas library in my way ,  allows you to visualize data using data tables '
 
 # Setting up

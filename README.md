@@ -9,6 +9,8 @@
 This is an awesome library made by developer for data crazy devs. This library is just a simple implementation of the most famous `pandas` lib used by data scientist for visualizing data.
 **Requires python version 3.10 or later**
 
+
+<!--  Sample code  , pip install command -->
 ## General Overview
 
 - Makes your data feel alive .

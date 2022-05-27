@@ -2,7 +2,7 @@
 
 **_Love torturing data ? Cause if you torture the data it will confess! Feel the data talking to you #AliveData._**
 
-A package that with implementation of famous `Pandas` library in my way , allows you to visualize data using data tables
+A package with implementation of famous `Pandas` library in my way , allows you to visualize data using data tables.
 
 ![Pandas Prototype](https://sanmeet007.github.io/python-protos/images/pandas_prototype.png)
 

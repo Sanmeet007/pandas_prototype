@@ -2,34 +2,36 @@
 
 **_Love torturing data ? Cause if you torture the data it will confess! Feel the data talking to you #AliveData._**
 
-![Pandas Proto](https://github.com/Sanmeet007/python-protos/blob/74962d516ef1abe7a1fd26b7e63a40272fdcebdd/images/Screenshot%20(31).png)
+A package that with implementation of famous `Pandas` library in my way , allows you to visualize data using data tables
+
+![Pandas Proto](<https://github.com/Sanmeet007/python-protos/blob/74962d516ef1abe7a1fd26b7e63a40272fdcebdd/images/Screenshot%20(31).png>)
 
 ---
 
-This is an awesome library made by developer for data crazy devs. This library is just a simple implementation of the most famous `pandas` lib used by data scientist for visualizing data.
 **Requires python version 3.10 or later**
 
-
 <!--  Sample code  , pip install command -->
+
 ## General Overview
 
 - Makes your data feel alive .
 - You can filter , print , convert and do lot more with this.
 - Uses prettytable , json , json2html like libraries under the hood for better functioning.
 - Made by dev for devs and data scientists ^\_^
-- Compatible with python version 3.10 or above 
+- Compatible with python version 3.10 or above
 
 ### Dependencies :
 
 - `json2html` : for converting data_list to html table
 - `prettytable` : for printing tables using ascii
 
-### DataFrame Class :
+### Getting started
 
-This is the main class which is responsible for generating methods and atrributes which can be used for data filetering and other stuff.
-It takes a list as paramter , this list is then processed by it's initializer where all the magic happens !
+To install this package use pip command:
 
-#### Sample code
+```powershell
+ pip install pandas_prototype
+```
 
 This is an example of how to use DataFrame class to pretty print tables and make your data alive.
 
@@ -67,11 +69,61 @@ This is an example of how to use DataFrame class to pretty print tables and make
 
 ---
 
+## DataFrame Class :
+
+This is the main class which is responsible for generating methods and atrributes which can be used for data filetering and other stuff.
+It takes a list as paramter , this list is then processed by it's initializer where all the magic happens !
+
+### Constructor parameters
+
+```python
+DataFrame(data_list , headers, **kwargs)
+```
+
+1.  data_list (param1) : The first parameter is the data list which must have a type of list. All the data objects are created from this list.
+
+2.  headers (param2) : It is an `optional` parameter which basically controls the order of headers when printed.It must be a list type . By default the order of headers is sorted. To change this behaviour pass a list of headers which are basically the keys present in the data .Example :
+
+    ```python
+        data = DataFrame([
+            {
+                "id": 1,
+                "data": "..."
+            }
+            {
+                "id": 2,
+                "data": "..."
+            }
+        ]  , ["id" , "data"]) # Try adding data first instead of id
+
+    ```
+
+    In this above example we are passing the order of the headers in a way the `id` appears first and all others heads comes after it. In above example if one or more keys are not present then they will be sorted in ascending order and then printed !
+
+    > Note : The list which is passed must contain the exact head as keys of the list otherwise DataFrame will try to create a seperate coloumn for that head leading to corrupting the data.
+
+3.  \*\*kwargs : These are optional parameters which can be send to the DataFrame constructor . Right now only one kwarg is supported named `indexed` which when set to true will print indexes with the DataFrame object.(By default set to false)
+
 ## DataFrame methods
 
 - `data.to_list()` : returns the current DataFrame object in python list.
 - `data.to_json()` : converts the current DataFrame object to json format.
 - `data.to_html()` : converts the current DataFrame object to html table.
+- `data.to_csv()` : converts the current DataFrame object to csv.
+- `data.export()` : Exports your current to a file.
+
+### Export method
+
+This method when called on the DataFrame instance first converts the DataFrame object to specified format ( default `json` format if not specified ) and then dumps the data to output file whose name is passed as an argument .
+
+Example:
+
+```python
+    data = DataFrame(...)
+    data.export(file_name="filename" , format="json" , directory=".")
+```
+
+> Note : By default the file is written in current directory. You can change this behaviour by passing directory as kwarg to the method.
 
 ---
 

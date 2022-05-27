@@ -25,6 +25,7 @@ setup(
     install_requires=['json2html', 'prettytable'],
     keywords=['python', 'pandas', 'pandas prototype', 'prototyping', 'data visualizing', 'data scientist'  , 'data'],
     classifiers=[
+        "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
         "Operating System :: Microsoft :: Windows",

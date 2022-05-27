@@ -4,7 +4,7 @@
 
 A package that with implementation of famous `Pandas` library in my way , allows you to visualize data using data tables
 
-![Pandas Proto](<https://github.com/Sanmeet007/python-protos/blob/74962d516ef1abe7a1fd26b7e63a40272fdcebdd/images/Screenshot%20(31).png>)
+![Pandas Prototype](https://sanmeet007.github.io/python-protos/images/pandas_prototype.png)
 
 ---
 

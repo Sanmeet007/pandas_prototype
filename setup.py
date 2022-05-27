@@ -15,7 +15,7 @@ setup(
     name="pandas_prototype",
     version=VERSION,
     license="GPL-3.0 license",
-    url="https://github.com/Sanmeet007/pandas-prototype",
+    url="https://github.com/Sanmeet007/pandas_prototype",
     author="Sanmeet Singh",
     author_email="ssanmeet123@gmail.com",
     description=DESCRIPTION,

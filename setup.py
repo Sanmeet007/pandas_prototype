@@ -27,8 +27,7 @@ setup(
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.10.4",
+        "Programming Language :: Python :: 3.10",
         "Operating System :: Microsoft :: Windows",
     ]
 )
